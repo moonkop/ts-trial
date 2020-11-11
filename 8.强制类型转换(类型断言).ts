@@ -19,7 +19,13 @@ foo.bar = 123;
 foo.bas = 'hello';
 
 function someFun1(){
-    const obj={};
+    const obj:Foo={};
     obj.bar=123;
-    obj.bars='hello';
+    obj.bas='hello';
+}
+
+function someFun2(){
+    const obj={} as Foo;
+    obj.bar=123;
+    obj.bas='hello';
 }

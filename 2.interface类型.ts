@@ -66,3 +66,19 @@ let stu2:  {
 
 
 let titles =stu.orders.map(item=>item.title)
+
+
+interface TradeCardProps{
+    trade:Trade;
+    onClick:(trade:Trade)=>void;
+    onClick2:(trade:{
+        tid: string;
+        props: string[]
+        price: number;
+        orders: {
+            oid: string;
+            title: string;
+        }[]
+    })=>void;
+
+}

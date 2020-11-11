@@ -14,3 +14,6 @@ let arr:string[]=['234'];
 arr.push('123123');
 arr.push(123);
 arr[1].replace('1','2')
+
+
+let func:  ()=>string   =     ()=>{return 'hello'}

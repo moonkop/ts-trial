@@ -5,7 +5,7 @@
  * 这个关键词 与 any 类似 都是兜底的关键词 实在没有办法才用as
  **/
 
-function someFun(something) {
+function someFun(something:any) {
     return (something as string).replace('1', '2')
 }
 
